@@ -1,3 +1,10 @@
+#! /usr/bin/env python
+'''
+DFTP client
+'''
+
+
+
 import socket
 import time
 import sys
