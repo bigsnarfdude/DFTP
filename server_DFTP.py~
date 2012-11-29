@@ -70,13 +70,12 @@ def message_text_reassembler(data):
 
 while True:
     data, addr = udp_service.recvfrom(1024)
-    print data
-    #if data:
-        #print repr(data)
+    if data:
+        print repr(data)
         #data = data[0].strip()
         #print "cleaned", repr(data)
-        #message_text_reassembler(data)
-        #print text_message
+        message_text_reassembler(data)
+        print text_message
     # buffer receives data
     # write data to buffer
     # output to screen appended data

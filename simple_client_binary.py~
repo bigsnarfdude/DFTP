@@ -9,7 +9,7 @@ import string
 UDP_IP = "127.0.0.1"
 UDP_PORT = 5555
 MESSAGE = (string.lowercase)
-packer = struct.Struct("s")
+packer = struct.Struct("26s")
 packed_data = packer.pack(MESSAGE)
 
 print "UDP target IP:", UDP_IP
