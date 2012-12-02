@@ -1,6 +1,15 @@
 DFTP
 ====
 
+13 Signs that "bad guys" are using DNS Exfiltration to steal your data. 
+
+How do you test DNS Exfiltration? 
+How do you use Machine Learning to catch the bad guys? 
+
+In this project I have built a Python DNS Exfiltration Tool. 
+
+I have also built a basic POC Machine Learning algorithm to catch "bad guys" exfiltrating with my DNS tool.
+
 Domain Name Service File Transfer Protocol (DFTP) Client and Server
 
 
