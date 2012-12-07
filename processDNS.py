@@ -3,8 +3,10 @@
 processes DNS packets outputed by tcpdump into dataset for sklearn
 '''
 
-INPUTFILE = '/Users/antigen/dev/DFTP/dataDNS'
-OUTPUTFILE = '/Users/antigen/dev/DFTP/dataDNS.csv'
+
+import csv
+INPUTFILE = 'tcpdump_dns_filtered_file'
+OUTPUTFILE = 'converted_dns.csv'
 
 
 def process_DNS_answers(data):
@@ -53,6 +55,10 @@ def process_DNS_requests(data):
         packet = line.split()
         if "A?" in packet:
             print process_packet(packet)
+            with open(OUTPUTFILE, 'ab') as csvfile:
+                output = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+                output.writerow(process_packet(packet))
+
 
 data = open(INPUTFILE).readlines()
 process_DNS_requests(data)
