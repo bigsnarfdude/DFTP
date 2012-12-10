@@ -22,4 +22,6 @@ More Reading
 * RFC1035, “Domain Names: Implementation and Specification”: http://www.faqs.org/rfcs/rfc1035.html
 
 
+
+![alt text][logo]
 [logo]: https://github.com/bigsnarfdude/DFTP/blob/master/Screen%20Shot%202012-12-10%20at%202.14.42%20PM.png "SHA1 DNS Exfil Screenshot"
