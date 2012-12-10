@@ -20,3 +20,6 @@ More Reading
 * Microsoft TechNet guide to DNS: http://technet.microsoft.com/en-us/library/cc779489(WS.10).aspx
 
 * RFC1035, “Domain Names: Implementation and Specification”: http://www.faqs.org/rfcs/rfc1035.html
+
+
+[logo]: https://github.com/bigsnarfdude/DFTP/blob/master/Screen%20Shot%202012-12-10%20at%202.14.42%20PM.png "SHA1 DNS Exfil Screenshot"
