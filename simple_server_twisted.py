@@ -67,8 +67,9 @@ TTL = 60
 class DNSServerFactory(server.DNSServerFactory):
     def gotResolverResponse(self, (ans, auth, add), protocol, message, address):
         qname = message.queries[0].name.name
-        print repr(qname)
         if MYDOMAIN in qname:
+            line = qname.split('.')
+            print "encrypted message: ", line[0]
             for answer in ans:
                 if answer.type != dns.A:
                     print "answer"
